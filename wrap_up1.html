@@ -10,6 +10,11 @@
         .image-row img {
             height: 200px;
             width: auto;
+            transition: transform 0.2s ease;
+            border-radius: 20px;
+        }
+        .image-row img:hover {
+            transform: scale(1.05);
         }
         body {
             background-color: #CCD3F0;
@@ -35,7 +40,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .navbar {
             background-color: #1B458F;
             padding: 10px 20px;
@@ -57,6 +61,20 @@
         .navbar a:hover {
             background-color: #305CDE;
         }
+        /* unique ID style */
+        #stadium-fact {
+            background-color: #f0f2fa;
+            padding: 15px;
+            border-radius: 30px;
+            border-right: 8px solid #1B458F;
+        }
+        iframe {
+            border-radius: 20px;
+            border: 2px solid #1B458F;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,6 +88,7 @@
         <a href="wrap_up1.html">Location</a>
         <a href="wrap_up2.html">History</a>
         <a href="wrap_up3.html">Records</a>
+        <a href="reference.html">References</a>
     </div>
 
     <div class="div">
@@ -85,9 +104,7 @@
         <p class="image-row">
             <img src="selhurst_seats.jpg" alt="Selhurst Seats">
         </p>
-        <p>
-            The stadium was designed by Archibald Leitch and opened in 1924. It has hosted international football, as well as games for the 1948 Summer Olympics. Selhurst Park is owned by Crystal Palace F.C and has a capacity of 25,486.
-        </p>
+        <p id="stadium-fact">The stadium was designed by Archibald Leitch and opened in 1924. It has hosted international football, as well as games for the 1948 Summer Olympics. Selhurst Park is owned by Crystal Palace F.C and has a capacity of 25,486.</p>
     </div>
 
     <div class="div">
@@ -96,9 +113,14 @@
         <p class="image-row">
             <img src="whitehorse_lane.jpg" alt="Whitehorse Lane">
         </p>
-        <p>
-            Holmesdale Road Stand, Arthur Wait Stand, Main Stand, and Whitehorse Lane Stand.
-        </p>
+        <p>Holmesdale Road Stand, Arthur Wait Stand, Main Stand, and Whitehorse Lane Stand.</p>
+    </div>
+
+    <!-- EMBEDDED MEDIA: Google Map of Selhurst Park -->
+    <div class="div">
+        <h2>Find Selhurst Park</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.8230394190695!2d-0.08546268422947618!3d51.39834717962088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a5f1f6bd8e4d%3A0x5b8c7e0a6e9f2b5!2sSelhurst%20Park%20Stadium!5e0!3m2!1sen!2suk!4v1614550000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
+        <p style="text-align:center">📍 Holmesdale Road, London SE25 6PU</p>
     </div>
 </body>
 </html>
