@@ -10,6 +10,11 @@
         .image-row img {
             height: 200px;
             width: auto;
+            transition: transform 0.2s;
+            border-radius: 20px;
+        }
+        .image-row img:hover {
+            transform: scale(1.04);
         }
         body {
             background-color: #CCD3F0;
@@ -35,7 +40,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .navbar {
             background-color: #1B458F;
             padding: 10px 20px;
@@ -57,6 +61,14 @@
         .navbar a:hover {
             background-color: #305CDE;
         }
+        #record-fact {
+            background-color: #f9f3e3;
+            padding: 15px;
+            border-radius: 30px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,6 +82,7 @@
         <a href="wrap_up1.html">Location</a>
         <a href="wrap_up2.html">History</a>
         <a href="wrap_up3.html">Records</a>
+        <a href="reference.html">References</a>
     </div>
 
     <div class="div">
@@ -85,8 +98,7 @@
         <p class="image-row">
             <img src="jim_cannon.jpg" alt="Jim Cannon">
         </p>
-        <p>
-            Jim Cannon	1973–1988	660 Total Appearances
+        <p>Jim Cannon	1973–1988	660 Total Appearances</p>
     </div>
 
     <div class="div">
@@ -95,9 +107,8 @@
         <p class="image-row">
             <img src="peter_simpson.jpg" alt="Peter Simpson">
         </p>
-        <p>
-            Peter Simpson	1929–1935	165 Total Goals
-        </p>
+        <p>Peter Simpson	1929–1935	165 Total Goals</p>
+        <div id="record-fact">⭐ Did you know? Peter Simpson scored 165 goals in just 6 seasons – a record that still stands today.</div>
     </div>
 </body>
 </html>
