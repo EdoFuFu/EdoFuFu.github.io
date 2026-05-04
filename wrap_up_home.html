@@ -22,7 +22,6 @@
         font-family: 'Commissioner', cursive;
       }
 
-      
       .container {
         display: flex;
         justify-content: center;
@@ -39,19 +38,70 @@
         box-shadow: 5px 5px 15px rgba(48, 92, 222, 0.3);
         text-align: center;
         margin: 10px 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 8px 8px 20px rgba(48, 92, 222, 0.5);
       }
       .card img {
         max-width: 100%;
         height: auto;
         margin: 15px 0;
+        transition: transform 0.2s ease;
+      }
+      .card img:hover {
+        transform: scale(1.02);
       }
       .reference {
         text-align: center;
         margin-top: 30px;
       }
+
+      /* Unique ID style */
+      #fan-zone {
+        background-color: #e0e7ff;
+        padding: 20px;
+        border-radius: 40px;
+        border-left: 10px solid #1B458F;
+        margin: 20px auto;
+        width: 85%;
+        font-family: 'Commissioner', sans-serif;
+        color: #1B458F;
+      }
+      .navbar {
+        background-color: #1B458F;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        border-bottom: 3px solid #CCD3F0;
+      }
+      .navbar a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transition: background-color 0.3s;
+      }
+      .navbar a:hover {
+        background-color: #305CDE;
+      }
     </style>
   </head>
   <body>
+
+    <div class="navbar">
+        <a href="wrap_up_home.html">Home</a>
+        <a href="wrap_up1.html">Location</a>
+        <a href="wrap_up2.html">History</a>
+        <a href="wrap_up3.html">Records</a>
+        <a href="reference.html">References</a>
+    </div>
+
     <h1>
       <img src="palace_logo.png" height="400px" alt="Crystal Palace Logo">
     </h1>
@@ -69,6 +119,11 @@
         <a href="wrap_up3.html">Records</a>
         <img src="fa_cup.jpeg" height="400px" alt="Fa Cup">
       </div>
+    </div>
+
+    <div id="fan-zone">
+      <h2>Why I Love Crystal Palace </h2>
+      <p>To be honest, I only chose to support this club because it was 1 place above Kuai Sang's club when he showed me a league table. Since then, I have discovered that the club plays very exciting football and has a great community of supporters.</p>
     </div>
 
     <div class="reference">
